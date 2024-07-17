@@ -1,19 +1,6 @@
 ## LLM Unlearning
 
-Released code for the paper [Large Language Model Unlearning](https://arxiv.org/pdf/2310.10683.pdf).
-
 ![alt text](assets/overview.png "Overview")
-
-
-Cite:
-```latex
-@article{yao2023llmunlearn,
-  title={Large Language Model Unlearning},
-  author={Yuanshun, Yao and Xiaojun, Xu and Yang, Liu},
-  journal={arXiv preprint arXiv:2310.10683},
-  year={2023}
-}
-```
 
 
 ### Overview
