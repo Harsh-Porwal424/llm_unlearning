@@ -45,7 +45,6 @@ def main(args) -> None:
             inference_mode=False,
             r=32,
             lora_alpha=16,
-            target_modules=["q_proj", "v_proj"],
         )
         model = get_peft_model(model, peft_config)
 
@@ -53,7 +52,7 @@ def main(args) -> None:
     tokenizer = AutoTokenizer.from_pretrained(args.model_name)
 
     # Load harmful data.
-    train_dataset = load_dataset("PKU-Alignment/PKU-SafeRLHF", split="330k_train")
+    train_dataset = load_dataset("PKU-Alignment/PKU-SafeRLHF", split="train")
     train_bad_loader = create_pku_dataloader_from_dataset(
         tokenizer, train_dataset, batch_size=args.batch_size
     )
